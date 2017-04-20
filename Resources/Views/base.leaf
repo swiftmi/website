@@ -4,6 +4,8 @@
     #import("head")
 </head>
     <body>
+        #embed("nav")
         #import("body")
+        #embed("footer")
     </body>
 </html>
