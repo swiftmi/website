@@ -17,7 +17,6 @@ final class ArticleController {
         let pager = Util.calcPager(page: pn, size: pageSize, rows: totalCount)
         return try drop.view.make("article_list",["articles":articles,"pager":pager])
         
-//        return try Article.all().makeNode().converted(to: JSON.self)
     }
     
     func detail(request: Request)  throws -> ResponseRepresentable {
