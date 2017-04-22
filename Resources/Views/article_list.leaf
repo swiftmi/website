@@ -35,7 +35,7 @@
                             </div>
                             <div class="infos media-body">
                                 <div class="title media-heading">
-                                    <a title="#(article.title)" class="" target="_blank" href="/articles/#(article.articleId).html">#(article.title)!</a>
+                                    <a title="#(article.title)" class="" target="_blank" href="/articles/#(article.articleId)">#(article.title)!</a>
                                 </div>
                                 <div class="info">
                                     <a class="node" target="_blank" href="#(article.sourceUrl)">#(article.sourceName)</a>
@@ -53,6 +53,7 @@
                     </div>
 
                     <div class="panel-footer clearfix">
+                        #embed("pager")
                     </div>
                 </div>
             </div>
