@@ -15,7 +15,10 @@ final class ArticleController {
         let articles = try Article.query().limit(pageSize, withOffset: (pn-1)*pageSize).run().makeNode()
         let totalCount = try Article.query().count()
         let pager = Util.calcPager(page: pn, size: pageSize, rows: totalCount)
-        return try drop.view.make("article_list",["articles":articles,"pager":pager])
+        
+    
+        
+        return try drop.view.make("test.stencil", ["articles":articles])
         
     }
     

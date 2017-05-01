@@ -1,8 +1,11 @@
 import Vapor
 import VaporMySQL
+import VaporStencilProvider
 
 let drop = Droplet()
+
 try drop.addProvider(VaporMySQL.Provider.self)
+try drop.addProvider(VaporStencilProvider.self)
 drop.preparations.append(Article.self)
 
 var articleController  = ArticleController()

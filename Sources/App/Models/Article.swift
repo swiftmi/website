@@ -40,6 +40,7 @@ final class Article: Model {
     }
 
     func makeNode(context: Context) throws -> Node {
+    
         return try Node(node: [
             "articleId": id,
             "content": content,
