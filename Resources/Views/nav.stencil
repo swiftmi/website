@@ -4,7 +4,7 @@
             <div class="navbar-header" id="navbar-header">
                 <a href="/" class="navbar-brand"><b>SWIFT</b> MI</a>
             </div>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#()main-nav-menu">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-menu">
                 <span class="sr-only">Toggle navigation</span>
                 <i class="fa fa-reorder"></i>
             </button>
