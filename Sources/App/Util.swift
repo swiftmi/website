@@ -14,6 +14,6 @@ class Util:NSObject  {
         if pages * pageSize < records {
             pages += 1
         }
-        return ["totalPage":Node(pages),"pageSize":Node(pageSize), "currentPage":Node(pageIndex), "totalCount":Node(records)]
+        return ["totalPage":Node(pages),"pageSize":Node(pageSize), "currentPage":Node(pageIndex), "totalCount":Node(records),"nextPage":Node(pageIndex+1),"prevPage":Node(pageIndex-1)]
     }
 }

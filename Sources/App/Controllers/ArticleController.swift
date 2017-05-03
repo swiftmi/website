@@ -18,7 +18,7 @@ final class ArticleController {
         
     
         
-        return try drop.view.make("test.stencil", ["articles":articles])
+        return try drop.view.make("article_list.stencil", ["articles":articles,"pager":pager])
         
     }
     
@@ -35,7 +35,7 @@ final class ArticleController {
         if article == nil {
             throw Abort.notFound
         }
-        return try drop.view.make("article_detail",["article":article!])
+        return try drop.view.make("article_detail.stencil",["article":article!])
     }
 
 }
